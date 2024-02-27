@@ -2,7 +2,7 @@
 
 Submitted by: **Rahul Shah**
 
-**Water/Drink Consumption Tracker Part 2** is a health metrics app that allows users to track ... [TODO]
+**Water/Drink Consumption Tracker Part 2** is a health metrics app that allows users to track your water/drink intake on a daily basis. You can track how many liters of liquid you consumed throughout your day and the total sugars added per drink.
 
 Time spent: **6** hours spent in total
 
@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='BitFit_Part2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows

@@ -6,13 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.codepath.BitFit_Part2.R
 
 const val DRINK_EXTRA = "DRINK_EXTRA"
 private const val TAG = "DisplayDrinkAdapter"
 
-class DisplayArticleAdapter(private val context: Context, private val drinks: List<DisplayDrink>) :
-    RecyclerView.Adapter<DisplayArticleAdapter.ViewHolder>() {
+class DisplayDrinkAdapter(private val context: Context, private val drinks: List<DisplayDrink>) :
+    RecyclerView.Adapter<DisplayDrinkAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_drink, parent, false)
@@ -21,8 +20,8 @@ class DisplayArticleAdapter(private val context: Context, private val drinks: Li
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         // TODO: Get the individual article and bind to holder
-        val article = drinks[position]
-        holder.bind(article)
+        val drink = drinks[position]
+        holder.bind(drink)
     }
 
     override fun getItemCount() = drinks.size

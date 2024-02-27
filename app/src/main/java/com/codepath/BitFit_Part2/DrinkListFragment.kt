@@ -20,7 +20,7 @@ class DrinkListFragment : Fragment() {
     // Add these properties
     private val drinks = mutableListOf<DisplayDrink>()
     private lateinit var drinksRecyclerView: RecyclerView
-    private lateinit var drinksAdapter: DisplayArticleAdapter
+    private lateinit var drinksAdapter: DisplayDrinkAdapter
     private lateinit var waterImg : ImageView
     private lateinit var textMsg : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +36,7 @@ class DrinkListFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_drink_list, container, false)
 
         // Add these configurations for the recyclerView and to configure the adapter
-        drinksAdapter = DisplayArticleAdapter(view.context, drinks)
+        drinksAdapter = DisplayDrinkAdapter(view.context, drinks)
         drinksRecyclerView = view.findViewById(R.id.drinksRv)
 
         // Update the return statement to return the inflated view from above
