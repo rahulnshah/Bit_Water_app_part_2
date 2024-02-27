@@ -5,18 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.launch
 
 class DashboardFragment : Fragment() {
     // Add these properties
     private val drinks = mutableListOf<DisplayDrink>()
-    private lateinit var drinksAdapter: DisplayArticleAdapter
+    private lateinit var drinksAdapter: DisplayDrinkAdapter
     private lateinit var totalDrinksTextView: TextView
     private lateinit var totalSugarTextView: TextView
     private lateinit var maxLitersTextView : TextView
@@ -34,7 +30,7 @@ class DashboardFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_dashboard, container, false)
         // Add these configurations for the recyclerView and to configure the adapter
-        drinksAdapter = DisplayArticleAdapter(view.context, drinks)
+        drinksAdapter = DisplayDrinkAdapter(view.context, drinks)
         return view
     }
 
