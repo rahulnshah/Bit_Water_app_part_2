@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+
+    <TextView
+        android:id="@+id/volume_metric"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#567b95"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="Volume (liters):"
+        app:layout_constraintBottom_toTopOf="@+id/volumeAmt"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sugar_metric"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#567b95"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="Sugar (grams):"
+        app:layout_constraintBottom_toTopOf="@+id/sugarAmt"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/volumeAmt"
+        android:layout_width="114dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Ex: 5.99"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/drinkTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/drinkTitle"
+        android:layout_width="155dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="Drink Name"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/sugarAmt"
+        android:layout_width="114dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="28dp"
+        android:hint="Ex: 5.99"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="149dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="SUBMIT"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
